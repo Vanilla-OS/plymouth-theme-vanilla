@@ -1,0 +1,17 @@
+Source: plymouth-theme-vanilla
+Section: utils
+Priority: optional
+Maintainer: Mirko Brombin <send@mirko.pm>
+Build-Depends: debhelper (>= 11),
+Homepage: https://github.com/mirkobrombin/plymouth-theme-vanilla/
+Vcs-Browser: hhttps://github.com/mirkobrombin/plymouth-theme-vanilla
+Vcs-Git: https://github.com/mirkobrombin/plymouth-theme-vanilla.git
+Rules-Requires-Root: no
+
+Package: plymouth-theme-vanilla
+Architecture: any
+Depends: plymouth,
+         plymouth-label,
+         plymouth-theme-ubuntu-text,
+         ${misc:Depends},
+Description: Official Vanilla OS Plymouth (both logo and text)
