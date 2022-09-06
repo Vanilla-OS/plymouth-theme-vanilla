@@ -3,4 +3,7 @@ mesonbuild/
 build/
 debian/files
 debian/plymouth-theme-vanilla.substvars
+debian/plymouth-theme-vanilla
+debian/plymouth-theme-vanilla-logo
+debian/plymouth-theme-vanilla-text
 debian/.debhelper
