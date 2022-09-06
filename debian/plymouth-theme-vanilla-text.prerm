@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ "x$1" = xremove ]; then
+	update-alternatives \
+		--remove text.plymouth /usr/share/plymouth/themes/vanilla-text/vanilla-text.plymouth
+fi
+
+#DEBHELPER#
