@@ -3,6 +3,9 @@
 set -e
 
 if [ "x$1" = xremove ]; then
+	unlink "/usr/share/plymouth/ubuntu-logo.png"
+	dpkg-divert --package plymouth-theme-vanilla-logo --remove --rename \
+	--divert "/usr/share/plymouth/ubuntu-logo.png.vanilla" "/usr/share/plymouth/ubuntu-logo.png"
 	if which update-initramfs >/dev/null 2>&1
 	then
 		update-initramfs -u
