@@ -10,7 +10,7 @@ Rules-Requires-Root: no
 
 Package: plymouth-theme-vanilla
 Architecture: all
-Depends: plymou-theme-vanilla-logo,
+Depends: plymouth-theme-vanilla-logo,
          plymouth-theme-vanilla-text
 Description: Official Vanilla OS Plymouth (metapackage)
  This package contains the official Vanilla OS Plymouth theme.
