@@ -8,6 +8,15 @@ Vcs-Browser: hhttps://github.com/mirkobrombin/plymouth-theme-vanilla
 Vcs-Git: https://github.com/mirkobrombin/plymouth-theme-vanilla.git
 Rules-Requires-Root: no
 
+Package: plymouth-theme-vanilla
+Architecture: all
+Depends: plymouththeme-vanilla-logo,
+         plymouth-theme-vanilla-text
+Description: Official Vanilla OS Plymouth (metapackage)
+ This package contains the official Vanilla OS Plymouth theme.
+ .
+ This package is a metapackage, it depends on the logo and text packages.
+
 Package: plymouth-theme-vanilla-logo
 Architecture: all
 Depends: plymouth,
