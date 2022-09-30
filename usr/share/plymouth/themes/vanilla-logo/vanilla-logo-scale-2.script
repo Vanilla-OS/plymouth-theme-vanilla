@@ -229,7 +229,7 @@ progress_indicator.bullet_off = LoadScaleImage (progress_dot_off_filename);
 progress_indicator.bullet_on = LoadScaleImage (progress_dot_on_filename);
 progress_indicator.bullet_width = progress_indicator.bullet_off.GetWidth ();
 progress_indicator.bullet_height = progress_indicator.bullet_off.GetHeight ();
-progress_indicator.bullet_hspacing = progress_indicator.bullet_width * 1.1;
+progress_indicator.bullet_hspacing = progress_indicator.bullet_width;
 progress_indicator.width = progress_indicator.bullet_width * 5;
 progress_indicator.height = progress_indicator.bullet_height;
 progress_indicator.y = logo.y + logo.height + (logo.height / 10);
@@ -348,7 +348,7 @@ fun animate_progress_indicator (progress, time) {
 #    if (global.on_off == NULL)
 #        global.on_off = 0;
 
-    if ((progress - global.progress_time) >= 0.7) {
+    if ((progress - global.progress_time) >= 0.05) {
         global.progress_time = progress;
         
         if (global.times_bullets_switched == 5) {
