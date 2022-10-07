@@ -20,15 +20,9 @@ case "$1" in
     configure)
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.plymouth 150 \
+		/usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.plymouth 150 \
 		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
-		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.grub
-
-	update-alternatives \
-		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo-scale-2.plymouth 149 \
-		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
-		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.grub
+		/usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.grub
 
 	if which update-initramfs >/dev/null 2>&1
 	then
