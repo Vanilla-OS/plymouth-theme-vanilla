@@ -1,14 +1,9 @@
-# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: plymouth 0.9.5\n"
-"Report-Msgid-Bugs-To: https://gitlab.freedesktop.org/plymouth/plymouth/"
+"Project-Id-Version: plymouth-theme-vanilla master\n"
+"Report-Msgid-Bugs-To: https://github.com/Vanilla-OS/plymouth-theme-vanilla/"
 "issues\n"
-"POT-Creation-Date: 2020-07-08 14:59-0400\n"
-"PO-Revision-Date: 2020-09-22 16:29+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
-"plymouth/master/uk/>\n"
+"master/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,38 +12,28 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.2.2\n"
 
-#: src/plugins/splash/two-step/plugin.c:1727
-#, c-format
-msgid "%d%% complete"
-msgstr "Виконано на %d%%"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:34
+msgid "Powering Off"
+msgstr "Вимкнути"
 
-#: themes/bgrt/bgrt.plymouth.desktop:3
-msgid "BGRT"
-msgstr "BGRT"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:39
+msgid "Restarting"
+msgstr "Перезапустити"
 
-#: themes/bgrt/bgrt.plymouth.desktop:44
-#: themes/spinner/spinner.plymouth.desktop:40
-msgid "Installing Updates..."
-msgstr "Встановлюємо оновлення…"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:45
+msgid "Installing Updates"
+msgstr "Встановлюємо оновлення"
 
-#: themes/bgrt/bgrt.plymouth.desktop:45 themes/bgrt/bgrt.plymouth.desktop:52
-#: themes/bgrt/bgrt.plymouth.desktop:59
-#: themes/spinner/spinner.plymouth.desktop:41
-#: themes/spinner/spinner.plymouth.desktop:48
-#: themes/spinner/spinner.plymouth.desktop:55
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:46
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:53
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:60
 msgid "Do not turn off your computer"
 msgstr "Не вимикайте комп'ютер"
 
-#: themes/bgrt/bgrt.plymouth.desktop:51
-#: themes/spinner/spinner.plymouth.desktop:47
-msgid "Upgrading System..."
-msgstr "Оновлюємо систему…"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:52
+msgid "Upgrading System"
+msgstr "Оновлюємо систему"
 
-#: themes/bgrt/bgrt.plymouth.desktop:58
-#: themes/spinner/spinner.plymouth.desktop:54
-msgid "Upgrading Firmware..."
-msgstr "Оновлюємо мікропрограму…"
-
-#: themes/spinner/spinner.plymouth.desktop:3
-msgid "Spinner"
-msgstr "Крутний індикатор"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:59
+msgid "Upgrading Firmware"
+msgstr "Оновлюємо мікропрограму"

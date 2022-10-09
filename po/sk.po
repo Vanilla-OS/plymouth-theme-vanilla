@@ -1,12 +1,8 @@
-# Dusan Kazik <prescott66@gmail.com>, 2020. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: plymouth 0.9.5\n"
-"Report-Msgid-Bugs-To: https://gitlab.freedesktop.org/plymouth/plymouth/"
+"Project-Id-Version: plymouth-theme-vanilla master\n"
+"Report-Msgid-Bugs-To: https://github.com/Vanilla-OS/plymouth-theme-vanilla/"
 "issues\n"
-"POT-Creation-Date: 2020-07-08 14:59-0400\n"
-"PO-Revision-Date: 2020-04-07 11:25-0400\n"
-"Last-Translator: Dusan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -15,38 +11,28 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: src/plugins/splash/two-step/plugin.c:1727
-#, c-format
-msgid "%d%% complete"
-msgstr "Dokončené na %d%%"
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:34
+msgid "Powering Off"
+msgstr "Vypnúť"
 
-#: themes/bgrt/bgrt.plymouth.desktop:3
-msgid "BGRT"
-msgstr ""
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:39
+msgid "Restarting"
+msgstr "Reštartovať"
 
-#: themes/bgrt/bgrt.plymouth.desktop:44
-#: themes/spinner/spinner.plymouth.desktop:40
-msgid "Installing Updates..."
-msgstr "Inštalujú sa aktualizácie..."
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:45
+msgid "Installing Updates"
+msgstr "Inštalujú sa aktualizácie"
 
-#: themes/bgrt/bgrt.plymouth.desktop:45 themes/bgrt/bgrt.plymouth.desktop:52
-#: themes/bgrt/bgrt.plymouth.desktop:59
-#: themes/spinner/spinner.plymouth.desktop:41
-#: themes/spinner/spinner.plymouth.desktop:48
-#: themes/spinner/spinner.plymouth.desktop:55
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:46
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:53
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:60
 msgid "Do not turn off your computer"
 msgstr "Nevypínajte váš počítač"
 
-#: themes/bgrt/bgrt.plymouth.desktop:51
-#: themes/spinner/spinner.plymouth.desktop:47
-msgid "Upgrading System..."
-msgstr "Aktualizuje sa systém..."
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:52
+msgid "Upgrading System"
+msgstr "Aktualizuje sa systém"
 
-#: themes/bgrt/bgrt.plymouth.desktop:58
-#: themes/spinner/spinner.plymouth.desktop:54
-msgid "Upgrading Firmware..."
-msgstr "Aktualizuje sa firmvér..."
-
-#: themes/spinner/spinner.plymouth.desktop:3
-msgid "Spinner"
-msgstr ""
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:59
+msgid "Upgrading Firmware"
+msgstr "Aktualizuje sa firmvér"
