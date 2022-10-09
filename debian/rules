@@ -1,6 +1,10 @@
 #!/usr/bin/make -f
-
-export NO_PNG_PKG_MANGLE=1
+#export DH_VERBOSE = 1
 
 %:
-	dh $@
+	dh $@ --buildsystem=meson
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-Dvanilla-logo=true \
+		-Dvanilla-text=true

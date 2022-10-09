@@ -4,5 +4,5 @@ Description=A theme that features a blank background with a logo.
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/vanilla-logo
-ScriptFile=/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.script
+ImageDir=@PLYMOUTH_THEME_PATH@/vanilla-logo
+ScriptFile=@PLYMOUTH_THEME_PATH@/vanilla-logo/vanilla-logo.script

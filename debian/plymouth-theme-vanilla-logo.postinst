@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+case "$1" in
+    configure)
+	update-alternatives \
+		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.plymouth 100 \
+		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
+		/usr/share/plymouth/themes/vanilla-logo/vanilla-logo.grub
+
+	if which update-initramfs >/dev/null 2>&1
+	then
+	    update-initramfs -u
+	fi
+	;;
+
+    abort-upgrade|abort-deconfigure|abort-remove)
+	;;
+
+    *)
+	echo "$0 called with unknown argument \`$1'" 1>&2
+	exit 1
+	;;
+esac
+
+#DEBHELPER#
+exit 0

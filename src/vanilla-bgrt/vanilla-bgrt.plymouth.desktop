@@ -1,12 +1,12 @@
 [Plymouth Theme]
 Name=Vanilla BGRT
-Description=A theme that features a black background with vanilla logo.
+Description=Vanilla OS spinner theme using the ACPI BGRT graphics as background
 ModuleName=two-step
 
 [two-step]
 Font=Cantarell 13
 TitleFont=Cantarell Bold 30
-ImageDir=/usr/share/plymouth/themes/vanilla-bgrt
+ImageDir=@PLYMOUTH_THEME_PATH@/vanilla-bgrt
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5
