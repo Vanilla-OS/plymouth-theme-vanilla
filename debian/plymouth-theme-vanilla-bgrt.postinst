@@ -1,44 +1,33 @@
 #!/bin/sh -e
-# This script can be called in the following ways:
-#
-# After the package was installed:
-#       <postinst> configure <old-version>
-#
-#
-# If prerm fails during upgrade or fails on failed upgrade:
-#       <old-postinst> abort-upgrade <new-version>
-#
-# If prerm fails during deconfiguration of a package:
-#       <postinst> abort-deconfigure in-favour <new-package> <version>
-#                  removing <old-package> <version>
-#
-# If prerm fails during replacement due to conflict:
-#       <postinst> abort-remove in-favour <new-package> <version>
 
+#DEBHELPER#
+
+error()
+{
+    RET=$?
+    MSG=$1
+    echo "E: $MSG";
+    exit $RET
+}
 
 case "$1" in
     configure)
-	update-alternatives \
-		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.plymouth 150 \
-		--slave /usr/share/plymouth/themes/default.grub default.plymouth.grub \
-		/usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.grub
+        update-alternatives \
+            --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+                /usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.plymouth 150 || error "Failed to update-alternatives"
 
-	if which update-initramfs >/dev/null 2>&1
-	then
-	    echo FRAMEBUFFER=y | tee /etc/initramfs-tools/conf.d/splash
-	    update-initramfs -u
-	fi
-	;;
+        if which update-initramfs >/dev/null 2>&1; then
+            update-initramfs -u || error "Failed to update-initramfs"
+        fi
+        ;;
 
     abort-upgrade|abort-deconfigure|abort-remove)
-	;;
+        ;;
 
     *)
-	echo "$0 called with unknown argument \`$1'" 1>&2
-	exit 1
-	;;
+        echo "$0 called with unknown argument \`$1'" 1>&2
+        exit 1
+        ;;
 esac
 
-#DEBHELPER#
 exit 0
