@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:34
+msgid "Powering Off"
+msgstr "Ausschalten"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:39
+msgid "Restarting"
+msgstr "Neu starten"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:45
+msgid "Installing Updates"
+msgstr "Updates werden installiert"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:46
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:53
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:60
+msgid "Do not turn off your computer"
+msgstr "Schalten Sie den Computer nicht aus"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:52
+msgid "Upgrading System"
+msgstr "Systemupgrade wird durchgeführt"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:59
+msgid "Upgrading Firmware"
+msgstr "Upgrade der Firmware wird durchgeführt"

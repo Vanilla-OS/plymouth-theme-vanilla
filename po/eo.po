@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:34
+msgid "Powering Off"
+msgstr "Malŝalti"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:39
+msgid "Restarting"
+msgstr "Restartigi"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:45
+msgid "Installing Updates"
+msgstr "Instalante ĝisdatigojn"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:46
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:53
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:60
+msgid "Do not turn off your computer"
+msgstr "Ne malŝaltu vian komputilon"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:52
+msgid "Upgrading System"
+msgstr "Altgradigante sistemon"
+
+#: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:59
+msgid "Upgrading Firmware"
+msgstr "Altgradigante mikroprogramaron..."

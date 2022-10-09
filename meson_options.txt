@@ -1,0 +1,3 @@
+option('vanilla-bgrt', type: 'boolean', value: true, description:'build vanilla-bgrt plymouth-theme (default)')
+option('vanilla-logo', type: 'boolean', value: true, description:'build vanilla-logo plymouth-theme')
+option('vanilla-text', type: 'boolean', value: true, description:'build vanilla-text plymouth-theme')
