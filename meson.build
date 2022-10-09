@@ -1,6 +1,6 @@
 project('plymouth-theme-vanilla',
   meson_version: '>= 0.61',
-  version: '43.beta',
+  version: '0.0.7',
   license : 'GPL3',
   default_options: ['prefix=/usr']
 )

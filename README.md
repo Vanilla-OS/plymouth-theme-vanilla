@@ -1,5 +1,5 @@
 # Vanilla OS Plymouth
-This package contains both logo and text variants.
+This package contains bgrt, logo and text variants.
 
 ---
 
