@@ -31,6 +31,7 @@ Package: plymouth-theme-vanilla-logo
 Architecture: all
 Depends: plymouth,
          plymouth-label,
+         gettext,
          ${misc:Depends},
 Provides: plymouth-theme,
 Breaks: plymouth (<< 0.9.2-3ubuntu1~),
