@@ -1,3 +1,15 @@
+plymouth-theme-vanilla (0.0.9) kinetic; urgency=medium
+
+  * add gsettings_override for gdm
+
+ -- Muqtadir <muqtadir555@gmail.com>  Sun, 27 Nov 2022 18:32:36 +0530
+ 
+ plymouth-theme-vanilla (0.0.8ubuntu1) kinetic; urgency=medium
+
+  * upload to testing ppa
+
+ -- muqtadir <muqtadir5555@gmail.com>  Fri, 04 Nov 2022 18:27:39 +0530
+
 plymouth-theme-vanilla (0.0.8) jammy; urgency=low
 
   * First release
