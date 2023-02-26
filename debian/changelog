@@ -1,3 +1,9 @@
+plymouth-theme-vanilla (1.0.0-1) lunar; urgency=medium
+
+  * bump version
+
+ -- Mirko Brombin <send@mirko.pm>  Sun, 29 dec 2022 15:32:36 +0530
+
 plymouth-theme-vanilla (1.0.0) kinetic; urgency=medium
 
   * bump version
