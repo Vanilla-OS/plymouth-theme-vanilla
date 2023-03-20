@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: Mirko Brombin <send@mirko.pm>
 Build-Depends: debhelper (>= 11),
 Build-Depends-Indep: meson (>= 0.61),
-Homepage: https://github.com/mirkobrombin/plymouth-theme-vanilla/
-Vcs-Browser: https://github.com/mirkobrombin/plymouth-theme-vanilla
-Vcs-Git: https://github.com/mirkobrombin/plymouth-theme-vanilla.git
+Homepage: https://github.com/Vanilla-OS/plymouth-theme-vanilla/
+Vcs-Browser: https://github.com/Vanilla-OS/plymouth-theme-vanilla
+Vcs-Git: https://github.com/Vanilla-OS/plymouth-theme-vanilla.git
 Rules-Requires-Root: no
 
 Package: plymouth-theme-vanilla
