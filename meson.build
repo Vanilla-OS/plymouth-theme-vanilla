@@ -4,7 +4,7 @@ project('plymouth-theme-vanilla',
   license : 'GPL3',
   default_options: ['prefix=/usr']
 )
-       
+
 # Modules
 i18n = import('i18n')
 
