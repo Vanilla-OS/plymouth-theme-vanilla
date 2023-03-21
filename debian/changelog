@@ -1,3 +1,9 @@
+plymouth-theme-vanilla (1.1.0) unstable; urgency=medium
+
+  * remove plymouth-theme-ubuntu-text dependency
+
+ -- Mateus Melchiades <matbme@duck.com>  Mon, 20 mar 2023 19:35:00 -0300
+
 plymouth-theme-vanilla (1.0.0) unstable; urgency=medium
 
   * bump version
