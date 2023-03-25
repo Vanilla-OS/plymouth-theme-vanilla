@@ -15,7 +15,7 @@ case "$1" in
         update-alternatives \
             --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
                 /usr/share/plymouth/themes/vanilla-bgrt/vanilla-bgrt.plymouth 150 || error "Failed to update-alternatives"
-
+        plymouth-set-default-theme vanilla-bgrt
         if which update-initramfs >/dev/null 2>&1; then
             update-initramfs -u || error "Failed to update-initramfs"
         fi
