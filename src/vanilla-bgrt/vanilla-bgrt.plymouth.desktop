@@ -12,13 +12,13 @@ DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5
 TitleVerticalAlignment=.382
 HorizontalAlignment=.5
-VerticalAlignment=.7
+VerticalAlignment=.35
 WatermarkHorizontalAlignment=.5
 WatermarkVerticalAlignment=.96
 Transition=none
 TransitionDuration=0.0
-BackgroundStartColor=0x000000
-BackgroundEndColor=0x000000
+BackgroundStartColor=0x333333
+BackgroundEndColor=0x333333
 ProgressBarBackgroundColor=0x606060
 ProgressBarForegroundColor=0xFBBD4E
 DialogClearsFirmwareBackground=true
@@ -30,12 +30,12 @@ UseFirmwareBackground=true
 
 [shutdown]
 UseEndAnimation=false
-UseFirmwareBackground=false
+UseFirmwareBackground=true
 Title=Powering off
 
 [reboot]
 UseEndAnimation=false
-UseFirmwareBackground=false
+UseFirmwareBackground=true
 Title=Restarting
 
 [updates]
