@@ -10,7 +10,7 @@ ImageDir=@PLYMOUTH_THEME_PATH@/vanilla-bgrt
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
-TitleVerticalAlignment=.5
+TitleVerticalAlignment=.55
 HorizontalAlignment=.5
 VerticalAlignment=.35
 WatermarkHorizontalAlignment=.5
@@ -43,18 +43,18 @@ SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
 Title=Installing Updates
-SubTitle=Do not turn off your computer
+SubTitle=Do not turn off your device
 
 [system-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
 Title=Upgrading System
-SubTitle=Do not turn off your computer
+SubTitle=Do not turn off your device
 
 [firmware-upgrade]
 SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
 Title=Upgrading Firmware
-SubTitle=Do not turn off your computer
+SubTitle=Do not turn off your device
