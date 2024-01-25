@@ -23,7 +23,7 @@ jobs:
         rm -r /run/host${{ runner.tool_cache }}
 
     - name: Install needed packages
-      run: apt update && apt install -y dpkg-dev build-essential debhelper plymouth plymouth-label plymouth-themes gettext
+      run: apt update && apt install -y dpkg-dev build-essential debhelper plymouth plymouth-label plymouth-themes gettext meson
 
     - name: Build debian package
       run: |
