@@ -1,0 +1,44 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/vanilla-os/pico:main
+      volumes:
+        - /proc:/proc
+        - /:/run/host
+      options: --privileged -it
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: De-bloat stock image
+      run: |
+        rm -r /run/host/usr/share/dotnet
+        rm -r /run/host${{ runner.tool_cache }}
+
+    - name: Install needed packages
+      run: apt update && apt install -y dpkg-dev build-essential debhelper plymouth plymouth-label plymouth-themes gettext
+
+    - name: Build debian package
+      run: |
+        dpkg-buildpackage --no-sign
+        mv ../plymouth-theme-vanilla-bgrt*.deb ../plymouth-theme-vanilla-bgrt.deb
+        mv ../plymouth-theme-vanilla-logo*.deb ../plymouth-theme-vanilla-logo.deb
+        mv ../plymouth-theme-vanilla-text*.deb ../plymouth-theme-vanilla-text.deb
+
+    - uses: softprops/action-gh-release@v1
+      with:
+        token: "${{ secrets.GITHUB_TOKEN }}"
+        tag_name: "continuous"
+        prerelease: true
+        name: "Continuous Build"
+        files: |
+          /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-bgrt.deb
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-logo.deb
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-text.deb
