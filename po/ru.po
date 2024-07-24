@@ -14,11 +14,11 @@ msgstr ""
 
 #: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:34
 msgid "Powering Off"
-msgstr "Выключить"
+msgstr "Выключение"
 
 #: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:39
 msgid "Restarting"
-msgstr "Перезапустить"
+msgstr "Перезагрузка"
 
 #: src/vanilla-bgrt/vanilla-bgrt.plymouth.desktop:45
 msgid "Installing Updates"
