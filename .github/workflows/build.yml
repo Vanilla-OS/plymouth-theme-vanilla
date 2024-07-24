@@ -1,12 +1,13 @@
-name: build
+name: Build
 
 on:
   push:
     branches: [ "main" ]
+  pull_request:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     container:
       image: ghcr.io/vanilla-os/pico:main
       volumes:
@@ -32,13 +33,30 @@ jobs:
         mv ../plymouth-theme-vanilla-logo*.deb ../plymouth-theme-vanilla-logo.deb
         mv ../plymouth-theme-vanilla-text*.deb ../plymouth-theme-vanilla-text.deb
 
-    - uses: softprops/action-gh-release@v1
+    - name: Calculate and Save Checksums
+      run: |
+        sha256sum /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-bgrt.deb >> checksums.txt
+        sha256sum /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-logo.deb >> checksums.txt
+        sha256sum /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-text.deb >> checksums.txt
+  
+    - uses: actions/upload-artifact@v4
+      with:
+        name: plymouth-theme-vanilla
+        path: |
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-bgrt.deb
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-logo.deb
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-text.deb
+            checksums.txt
+
+    - uses: softprops/action-gh-release@v2
+      if: github.ref == 'refs/heads/main'
       with:
         token: "${{ secrets.GITHUB_TOKEN }}"
         tag_name: "continuous"
         prerelease: true
         name: "Continuous Build"
         files: |
-          /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-bgrt.deb
+            /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-bgrt.deb
             /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-logo.deb
             /__w/plymouth-theme-vanilla/plymouth-theme-vanilla-text.deb
+            checksums.txt
